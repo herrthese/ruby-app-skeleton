@@ -1,3 +1,4 @@
 # Features
 - Sinatra
 - rspec
+- erb
