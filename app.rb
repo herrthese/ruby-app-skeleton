@@ -8,10 +8,10 @@ require_relative 'lib/open_weather_map'
 
 class App < Sinatra::Base
 
-  HAMBURG = 'http://api.openweathermap.org/data/2.5/weather?q=Hamburg,de'
+
 
   get '/' do
-    @current_weather = OpenWeatherMap.new.current_weather(HAMBURG)
+    @current_weather = OpenWeatherMap.new.current_weather
     erb :home
   end
 

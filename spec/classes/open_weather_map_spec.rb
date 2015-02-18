@@ -11,7 +11,7 @@ describe 'OpenWeatherMap' do
   before :each do
     stub_request(
         :get,
-        OpenWeatherMap
+        OpenWeatherMap::HAMBURG
     ).with(
         :headers => {
             'Accept'          => '*/*',
@@ -38,8 +38,7 @@ describe 'OpenWeatherMap' do
     )
 
     it 'should deliver valid parsed data' do
-      result = OpenWeatherMap.current_weather('http://api.openweathermap.org/data/2.5/weather?q=Hamburg,de')
-      #result = EpeJsonToCsv.epe_json
+      result = OpenWeatherMap.new.current_weather
       expect(result).to be_a Hash
       expect(result.keys).to be == expected.keys
     end

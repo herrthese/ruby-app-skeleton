@@ -4,7 +4,9 @@ require 'open-uri'
 
 class OpenWeatherMap
 
-  def current_weather(city)
-    JSON.parse(open(city).read)
+  HAMBURG = 'http://api.openweathermap.org/data/2.5/weather?q=Hamburg,de'
+
+  def current_weather
+    JSON.parse(open(HAMBURG).read)
   end
 end
