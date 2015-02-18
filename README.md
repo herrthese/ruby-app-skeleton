@@ -15,3 +15,6 @@ rake spec
 
 # Show rake Tasks
 rake -T
+
+# Use rubocop
+rubocop
