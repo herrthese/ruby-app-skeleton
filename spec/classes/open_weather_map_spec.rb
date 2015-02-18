@@ -1,4 +1,4 @@
-require './spec_helper'
+require './spec/spec_helper'
 require File.join(
             File.dirname(__FILE__),
             '..',
