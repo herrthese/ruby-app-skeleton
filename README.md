@@ -4,7 +4,7 @@
 - erb
 - twitter bootstrap 3.3.2
 - rake
-
+- rubucop
 
 
 # Run APP
