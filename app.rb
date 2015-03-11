@@ -15,6 +15,10 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/healthcheck' do
+    'eat more vegetables!'
+  end
+
 end
 
 
